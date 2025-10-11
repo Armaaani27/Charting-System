@@ -1,0 +1,11 @@
+/Users/arman/ChartingSystem/Library.ChartingSystem/bin/Debug/net9.0/Library.ChartingSystem.deps.json
+/Users/arman/ChartingSystem/Library.ChartingSystem/bin/Debug/net9.0/Library.ChartingSystem.dll
+/Users/arman/ChartingSystem/Library.ChartingSystem/bin/Debug/net9.0/Library.ChartingSystem.pdb
+/Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.AssemblyInfoInputs.cache
+/Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.AssemblyInfo.cs
+/Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.csproj.CoreCompileInputs.cache
+/Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.dll
+/Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/refint/Library.ChartingSystem.dll
+/Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.pdb
+/Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/ref/Library.ChartingSystem.dll

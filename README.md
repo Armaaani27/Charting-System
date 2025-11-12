@@ -16,4 +16,5 @@ C#, .NET MAUI Framework
 
 **How to Run CLI:**  
 1. Ensure you have the [.NET SDK](https://dotnet.microsoft.com/en-us/download) installed (version 6.0 or higher).  
-2. Open a terminal, navigate to the CLI.ChartingSystem folder in the project directory, and type: dotnet run
+2. Open a terminal, navigate to the CLI.ChartingSystem folder in the project directory, and type
+   `dotnet run`

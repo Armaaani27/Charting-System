@@ -1,0 +1,4 @@
+*.s linguist-language=C#
+*.asm linguist-language=C#
+*.aot.cs linguist-language=C#
+*.maui.g.* linguist-generated=true

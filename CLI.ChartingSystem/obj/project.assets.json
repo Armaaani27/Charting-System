@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "Library.Assignment1/1.0.0": {
+      "Library.ChartingSystem/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
-          "bin/placeholder/Library.Assignment1.dll": {}
+          "bin/placeholder/Library.ChartingSystem.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Library.Assignment1.dll": {}
+          "bin/placeholder/Library.ChartingSystem.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Library.Assignment1/1.0.0": {
+    "Library.ChartingSystem/1.0.0": {
       "type": "project",
-      "path": "../Library.Assignment1/Library.Assignment1.csproj",
-      "msbuildProject": "../Library.Assignment1/Library.Assignment1.csproj"
+      "path": "../Library.ChartingSystem/Library.ChartingSystem.csproj",
+      "msbuildProject": "../Library.ChartingSystem/Library.ChartingSystem.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Library.Assignment1 >= 1.0.0"
+      "Library.ChartingSystem >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arman/Assignment1/CLI.Assignment1/Assignment1.csproj",
-      "projectName": "Assignment1",
-      "projectPath": "/Users/arman/Assignment1/CLI.Assignment1/Assignment1.csproj",
+      "projectUniqueName": "/Users/arman/ChartingSystem/CLI.ChartingSystem/ChartingSystem.csproj",
+      "projectName": "ChartingSystem",
+      "projectPath": "/Users/arman/ChartingSystem/CLI.ChartingSystem/ChartingSystem.csproj",
       "packagesPath": "/Users/arman/.nuget/packages/",
-      "outputPath": "/Users/arman/Assignment1/CLI.Assignment1/obj/",
+      "outputPath": "/Users/arman/ChartingSystem/CLI.ChartingSystem/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/arman/.nuget/NuGet/NuGet.Config"
@@ -45,14 +45,15 @@
         "net9.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/arman/Assignment1/Library.Assignment1/Library.Assignment1.csproj": {
-              "projectPath": "/Users/arman/Assignment1/Library.Assignment1/Library.Assignment1.csproj"
+            "/Users/arman/ChartingSystem/Library.ChartingSystem/Library.ChartingSystem.csproj": {
+              "projectPath": "/Users/arman/ChartingSystem/Library.ChartingSystem/Library.ChartingSystem.csproj"
             }
           }
         }
@@ -88,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

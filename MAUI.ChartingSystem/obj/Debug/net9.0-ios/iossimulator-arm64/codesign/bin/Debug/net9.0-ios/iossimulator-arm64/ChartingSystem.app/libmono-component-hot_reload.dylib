@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/ChartingSystem.app/libmono-component-hot_reload.dylib

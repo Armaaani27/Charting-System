@@ -9,3 +9,4 @@
 /Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/refint/Library.ChartingSystem.dll
 /Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.pdb
 /Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/ref/Library.ChartingSystem.dll
+/Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.sourcelink.json

@@ -47,6 +47,7 @@
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.Maui.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.Maui.Essentials.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.Maui.Graphics.dll
+/Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Library.ChartingSystem.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/ChartingSystem.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.CSharp.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.VisualBasic.Core.dll
@@ -219,6 +220,7 @@
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/System.Private.CoreLib.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.iOS.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/ChartingSystem.pdb
+/Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Library.ChartingSystem.pdb
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.iOS.pdb
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/libSystem.Globalization.Native.dylib
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/libSystem.IO.Compression.Native.dylib

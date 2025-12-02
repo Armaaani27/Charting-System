@@ -6,7 +6,7 @@
       <CodesignSigningKey>-</CodesignSigningKey>
       <CodesignEntitlements>/Users/arman/ChartingSystem/MAUI.ChartingSystem/obj/Debug/net9.0-ios/iossimulator-arm64/Entitlements.xcent</CodesignEntitlements>
       <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
-      <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
+      <CodesignAllocate>/Applications/Xcode_26.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
       <CodesignExtraArgs></CodesignExtraArgs>
       <CodesignResourceRules></CodesignResourceRules>
       <CodesignDisableTimestamp>true</CodesignDisableTimestamp>

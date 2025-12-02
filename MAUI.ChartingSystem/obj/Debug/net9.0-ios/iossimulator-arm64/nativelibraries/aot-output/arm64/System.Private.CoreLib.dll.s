@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 9.0.10.0 (9.0.1025.47515 @Commit: e1f19886fe3354963a4a790c896b3f99689fd7a5)"
+	.asciz "Mono AOT Compiler 9.0.11.0 (9.0.1125.51716 @Commit: fa7cdded37981a97cec9a3e233c4a6af58a91c57)"
 	.asciz "System.Private.CoreLib.dll"
 	.asciz ""
 
@@ -51807,7 +51807,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "6C6FA85F-70DA-4C43-9C77-061CA9E8A13B"
+	.asciz "C31A7A01-9A75-4441-BC73-68DE0565F62F"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -51816,7 +51816,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 186,0
+	.long 187,0
 	.align 3
 	.quad mono_aot_corlib_got
 	.align 3
@@ -51904,7 +51904,7 @@ _mono_aot_file_info:
 	.long 0,0,0,297,297,297,297,297
 	.long 297,0,0,0,0,0,0,24
 	.long 24,60,24,0,24
-	.byte 94,226,5,173,66,143,124,229,31,30,153,176,204,179,124,20
+	.byte 41,237,249,250,80,109,43,191,31,206,131,159,232,55,76,177
 	.globl _mono_aot_module_System_Private_CoreLib_info
 	.align 3
 _mono_aot_module_System_Private_CoreLib_info:

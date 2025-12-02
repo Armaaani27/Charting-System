@@ -1,0 +1,6 @@
+/Users/arman/ChartingSystem/MAUI.ChartingSystem/obj/Debug/net9.0/ChartingSystem.csproj.AssemblyReference.cache
+/Users/arman/ChartingSystem/MAUI.ChartingSystem/obj/Debug/net9.0/ChartingSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arman/ChartingSystem/MAUI.ChartingSystem/obj/Debug/net9.0/ChartingSystem.AssemblyInfoInputs.cache
+/Users/arman/ChartingSystem/MAUI.ChartingSystem/obj/Debug/net9.0/ChartingSystem.AssemblyInfo.cs
+/Users/arman/ChartingSystem/MAUI.ChartingSystem/obj/Debug/net9.0/ChartingSystem.csproj.CoreCompileInputs.cache
+/Users/arman/ChartingSystem/MAUI.ChartingSystem/obj/Debug/net9.0/ChartingSystem.sourcelink.json

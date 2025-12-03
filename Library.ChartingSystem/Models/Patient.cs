@@ -10,6 +10,14 @@ namespace Library.ChartingSystem
         public string? Diagnosis { get; set; }
         public string? Prescription { get; set; }
 
+        public string Display
+        {
+            get
+            {
+                return ToString();
+            }
+        }
+
         public override string ToString()
         {
             return $"{Name}: {Address}, {Birthdate}, {Race}, {Gender}, {Diagnosis}, {Prescription}";

@@ -11,6 +11,11 @@ public partial class PatientsPage : ContentPage
 
     private void AddClicked(object sender, EventArgs e)
     {
+        Shell.Current.GoToAsync("//Patient");
+    }
+
+    private void EditClicked(object sender, EventArgs e)
+    {
         
     }
 }

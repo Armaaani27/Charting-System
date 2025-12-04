@@ -3,24 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Library.ChartingSystem;
+
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+
+using Library.ChartingSystem.Models;
+using Library.ChartingSystem.Services;
 
 namespace MAUI.ChartingSystem.ViewModels
 {
-    public class PatientsViewModel
+    public class PatientsViewModel : INotifyPropertyChanged
     {
-        public List<Patient> Patients
+        public ObservableCollection<Patient?> Patients
         {
             get
             {
-                return new List<Patient>
-                {
-                    new Patient { Name = "Patient1", Address = "123 Street", Birthdate = "Jan 1", Race = "Hispanic", Gender = "Male", Diagnosis = "Flu", Prescription = "tylenol" },
-                    new Patient { Name = "Patient2", Address = "124 Street", Birthdate = "Jan 2", Race = "Asian", Gender = "Male", Diagnosis = "Insomnia", Prescription = "melatonin" },
-                    new Patient { Name = "Patient3", Address = "125 Street", Birthdate = "Jan 3", Race = "White", Gender = "Female", Diagnosis = "Headache", Prescription = "advil" }
-                };
+                return new ObservableCollection<Patient?>(PatientServiceProxy.Current.Patients);
             }
         }
-        public Patient SelectedPatient { get; set; }
+        
+        public void Refresh()
+        {
+            NotifyPropertyChanged("Patients");
+        }
+        public Patient? SelectedPatient { get; set; }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }

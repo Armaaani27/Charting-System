@@ -4,9 +4,28 @@
              x:Class="MAUI.ChartingSystem.Views.PatientView"
              Title="PatientView">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Name" />
+        <Entry Text="{Binding Name}" />
+
+        <Label Text="Address" />
+        <Entry Text="{Binding Address}" />
+
+        <Label Text="Birthdate" />
+        <Entry Text="{Binding Birthdate}" />
+
+        <Label Text="Race" />
+        <Entry Text="{Binding Race}" />
+
+        <Label Text="Gender" />
+        <Entry Text="{Binding Gender}" />
+
+        <Label Text="Diagnosis" />
+        <Entry Text="{Binding Diagnosis}" />
+
+        <Label Text="Prescription" />
+        <Entry Text="{Binding Prescription}" />
+        
+        <Button Text="OK" Clicked="OkClicked" />
+        <Button Text="Cancel" Clicked="CancelClicked"/>
     </VerticalStackLayout>
 </ContentPage>

@@ -1,4 +1,6 @@
-namespace Library.ChartingSystem
+using Library.ChartingSystem.Services;
+
+namespace Library.ChartingSystem.Models
 {
     public class Patient
     {

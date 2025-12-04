@@ -18,4 +18,9 @@ public partial class PatientsPage : ContentPage
     {
         
     }
+
+    private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
+    {
+        (BindingContext as PatientsViewModel).Refresh();
+    }
 }

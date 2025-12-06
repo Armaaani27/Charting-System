@@ -31,6 +31,16 @@ namespace MAUI.ChartingSystem.ViewModels
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
+        public void Delete()
+        {
+            if (SelectedPatient == null)
+            {
+                return;
+            }
+            PatientServiceProxy.Current.Delete(SelectedPatient);
+            NotifyPropertyChanged("Patients");
+        }
+
         private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

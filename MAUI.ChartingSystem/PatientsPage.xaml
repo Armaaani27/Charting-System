@@ -42,6 +42,7 @@
             </ListView>
 
             <Button Text="Add" Clicked="AddClicked"/>
+            <Button Text="Delete" Clicked="DeleteClicked"/>
         </VerticalStackLayout>
     </ScrollView>
 

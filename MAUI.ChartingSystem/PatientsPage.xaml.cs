@@ -19,6 +19,11 @@ public partial class PatientsPage : ContentPage
         
     }
 
+    private void DeleteClicked(object sender, EventArgs e)
+    {
+        (BindingContext as PatientsViewModel).Delete();
+    }
+
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
         (BindingContext as PatientsViewModel).Refresh();

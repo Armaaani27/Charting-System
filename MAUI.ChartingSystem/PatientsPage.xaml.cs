@@ -11,21 +11,22 @@ public partial class PatientsPage : ContentPage
 
     private void AddClicked(object sender, EventArgs e)
     {
-        Shell.Current.GoToAsync("//Patient");
+        Shell.Current.GoToAsync("//Patient?patientId=0");
     }
 
     private void EditClicked(object sender, EventArgs e)
     {
-        
+        var selectedId = (BindingContext as PatientsViewModel)?.SelectedPatient?.Id ?? 0;
+        Shell.Current.GoToAsync($"//Patient?patientId={selectedId}");
     }
 
     private void DeleteClicked(object sender, EventArgs e)
     {
-        (BindingContext as PatientsViewModel).Delete();
+        (BindingContext as PatientsViewModel)?.Delete();
     }
 
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
-        (BindingContext as PatientsViewModel).Refresh();
+        (BindingContext as PatientsViewModel)?.Refresh();
     }
 }

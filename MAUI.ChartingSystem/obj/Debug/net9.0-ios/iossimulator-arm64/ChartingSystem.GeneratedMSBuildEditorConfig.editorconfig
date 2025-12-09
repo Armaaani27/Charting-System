@@ -26,6 +26,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ChartingSystem.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
+[/Users/arman/ChartingSystem/MAUI.ChartingSystem/AppointmentsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ChartingSystem.AppointmentsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AppointmentsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AppointmentsPage.xaml
+
 [/Users/arman/ChartingSystem/MAUI.ChartingSystem/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ChartingSystem.AppShell.xaml
@@ -44,6 +50,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ChartingSystem.PatientsPag
 build_metadata.AdditionalFiles.TargetPath = PatientsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = PatientsPage.xaml
 
+[/Users/arman/ChartingSystem/MAUI.ChartingSystem/PhysiciansPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ChartingSystem.PhysiciansPage.xaml
+build_metadata.AdditionalFiles.TargetPath = PhysiciansPage.xaml
+build_metadata.AdditionalFiles.RelativePath = PhysiciansPage.xaml
+
 [/Users/arman/ChartingSystem/MAUI.ChartingSystem/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ChartingSystem.Resources.Styles.Colors.xaml
@@ -56,8 +68,20 @@ build_metadata.AdditionalFiles.ManifestResourceName = ChartingSystem.Resources.S
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
+[/Users/arman/ChartingSystem/MAUI.ChartingSystem/Views/AppointmentView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ChartingSystem.Views.AppointmentView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AppointmentView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AppointmentView.xaml
+
 [/Users/arman/ChartingSystem/MAUI.ChartingSystem/Views/PatientView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ChartingSystem.Views.PatientView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/PatientView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/PatientView.xaml
+
+[/Users/arman/ChartingSystem/MAUI.ChartingSystem/Views/PhysicianView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ChartingSystem.Views.PhysicianView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/PhysicianView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/PhysicianView.xaml

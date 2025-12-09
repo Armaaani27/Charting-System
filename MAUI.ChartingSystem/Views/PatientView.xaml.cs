@@ -3,8 +3,11 @@ using Library.ChartingSystem.Services;
 
 namespace MAUI.ChartingSystem.Views;
 
+[QueryProperty(nameof(PatientId), "patientId")]
 public partial class PatientView : ContentPage
 {
+	public int PatientId { get; set; }
+
 	public PatientView()
 	{
 		InitializeComponent();
@@ -24,7 +27,13 @@ public partial class PatientView : ContentPage
 
 	private void PatientPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
-        // must call here instead of in PatientView() because we want to be able to create a new item every time the page is navigated to rather than only when it is initialized
-		BindingContext = new Patient();
+		if (PatientId == 0)
+        {
+            BindingContext = new Patient();
+        }
+		else
+        {
+            BindingContext = new Patient(PatientId);
+		}
     }
 }

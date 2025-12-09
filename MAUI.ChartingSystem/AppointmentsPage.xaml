@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ChartingSystem.PatientsPage"
+             x:Class="ChartingSystem.AppointmentsPage"
              NavigatedTo="ContentPage_NavigatedTo">
 
     <ScrollView>
@@ -9,13 +9,13 @@
             Padding="30,0"
             Spacing="25">
             <Label
-                Text="Patients"
+                Text="Scheduled Appointments"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2" />
 
             <ListView
-                ItemsSource="{Binding Patients}"
-                SelectedItem="{Binding SelectedPatient}"
+                ItemsSource="{Binding Appointments}"
+                SelectedItem="{Binding SelectedAppointment}"
                 >
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -43,7 +43,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <Button Text="Add" Clicked="AddClicked"/>
+            <Button Text="Schedule an Appointment" Clicked="AddClicked"/>
             <Button Text="Edit" Clicked="EditClicked"/>
             <Button Text="Delete" Clicked="DeleteClicked"/>
         </VerticalStackLayout>

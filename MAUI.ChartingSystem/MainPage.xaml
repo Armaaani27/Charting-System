@@ -26,11 +26,13 @@
             <Button
                 x:Name="PhysiciansBtn"
                 Text="Physicians" 
+                Clicked="OnPhysiciansClicked"
                 HorizontalOptions="Fill" />
 
             <Button
                 x:Name="AppointmentsBtn"
                 Text="Appointments" 
+                Clicked="OnAppointmentsClicked"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>

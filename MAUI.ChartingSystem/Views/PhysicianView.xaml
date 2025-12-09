@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.ChartingSystem.Views.PhysicianView"
+             Title="PhysicianView"
+             NavigatedTo="PhysicianPage_NavigatedTo">
+    <VerticalStackLayout>
+        <Label Text="Name" />
+        <Entry Text="{Binding Name}" />
+
+        <Label Text="License Number" />
+        <Entry Text="{Binding LicenseNum}" />
+
+        <Label Text="Graduation Date" />
+        <Entry Text="{Binding GradDate}" />
+
+        <Label Text="Specializations" />
+        <Entry Text="{Binding Specializations}" />
+        
+        <Button Text="OK" Clicked="OkClicked" />
+        <Button Text="Cancel" Clicked="CancelClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

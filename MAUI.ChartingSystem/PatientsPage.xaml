@@ -13,6 +13,15 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2" />
 
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Entry Grid.Column="0" Text="{Binding Query}"/>
+                <Button Grid.Column="1" Text="Search" Clicked="SearchClicked"/>
+            </Grid>
+
             <ListView
                 ItemsSource="{Binding Patients}"
                 SelectedItem="{Binding SelectedPatient}"
@@ -21,22 +30,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="2*"/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
                                 <Label Text="{Binding Display}" Grid.Column="0"/>
-                                <!--
-                                <Grid Grid.Column="1">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition/>
-                                        <ColumnDefinition/>
-                                    </Grid.ColumnDefinitions>
-                                    <Button Text="Edit" Grid.Column="0"/>
-                                    <Button Text="Delete" Grid.Column="1"/>
-                                </Grid>
-                                -->
-                                
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

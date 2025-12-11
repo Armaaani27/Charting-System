@@ -15,11 +15,20 @@ namespace MAUI.ChartingSystem.ViewModels
 {
     public class PatientsViewModel : INotifyPropertyChanged
     {
+        private bool MatchesQuery(Patient? patient)
+        {
+            if (patient == null)
+            {
+                return false;
+            }
+            return (patient?.Name?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false) || (patient?.Address?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false) || (patient?.Birthdate?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false) || (patient?.Gender?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false) || (patient?.Diagnosis?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false) || (patient?.Prescription?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false);
+        }
+        
         public ObservableCollection<Patient?> Patients
         {
             get
             {
-                return new ObservableCollection<Patient?>(PatientServiceProxy.Current.Patients);
+                return new ObservableCollection<Patient?>(PatientServiceProxy.Current.Patients.Where(MatchesQuery));
             }
         }
         
@@ -28,6 +37,7 @@ namespace MAUI.ChartingSystem.ViewModels
             NotifyPropertyChanged("Patients");
         }
         public Patient? SelectedPatient { get; set; }
+        public string? Query { get; set; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

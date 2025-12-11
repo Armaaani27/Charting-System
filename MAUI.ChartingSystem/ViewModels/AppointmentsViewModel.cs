@@ -15,11 +15,21 @@ namespace MAUI.ChartingSystem.ViewModels
 {
     public class AppointmentsViewModel : INotifyPropertyChanged
     {
+        // only allows searches for date and time; could update in the future to be able to search names of patients and physicians?
+        private bool MatchesQuery(Appointment? appointment)
+        {
+            if (appointment == null)
+            {
+                return false;
+            }
+            return (appointment?.Date?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false) || (appointment?.Time?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false);
+        }
+        
         public ObservableCollection<Appointment?> Appointments
         {
             get
             {
-                return new ObservableCollection<Appointment?>(AppointmentServiceProxy.Current.Appointments);
+                return new ObservableCollection<Appointment?>(AppointmentServiceProxy.Current.Appointments.Where(MatchesQuery));
             }
         }
         
@@ -28,6 +38,7 @@ namespace MAUI.ChartingSystem.ViewModels
             NotifyPropertyChanged("Appointments");
         }
         public Appointment? SelectedAppointment { get; set; }
+        public string? Query { get; set; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

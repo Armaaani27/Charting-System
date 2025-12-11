@@ -53,6 +53,43 @@ public class AppointmentServiceProxy
             return null;
         }
 
+        // PROBLEM: What if user enters a patient or physician ID that does not exist in the patient or physician lists?
+        int count1 = 0;
+        int count2 = 0;
+
+        foreach (var a in patientSvc.Patients)
+        {
+            if (appointment.PatId == a.Id)
+            {
+                count1++;
+            }
+        }
+        if (count1 < 1)
+        {
+            return null;
+        }
+
+        foreach (var a in physicianSvc.Physicians)
+        {
+            if (appointment.PhysId == a.Id)
+            {
+                count2++;
+            }
+        }
+        if (count2 < 1)
+        {
+            return null;
+        }
+
+        // this loop ensures that physicians are not double-booked (could maybe be improved to have a dropdown of selectable dates/times?)
+        foreach (var a in allAppointments)
+        {
+            if (a.PhysId == appointment.PhysId && a.Date == appointment.Date && a.Time == appointment.Time)
+            {
+                return null;
+            }
+        }
+
         appointment.Patient = patientSvc.Patients.FirstOrDefault(p => p.Id == appointment.PatId);
         appointment.Physician = physicianSvc.Physicians.FirstOrDefault(p => p.Id == appointment.PhysId);
 

@@ -29,4 +29,9 @@ public partial class PhysiciansPage : ContentPage
     {
         (BindingContext as PhysiciansViewModel)?.Refresh();
     }
+
+    private void SearchClicked(object sender, EventArgs e)
+    {
+        (BindingContext as PhysiciansViewModel)?.Refresh();
+    }
 }

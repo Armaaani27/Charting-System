@@ -29,4 +29,9 @@ public partial class AppointmentsPage : ContentPage
     {
         (BindingContext as AppointmentsViewModel)?.Refresh();
     }
+
+    private void SearchClicked(object sender, EventArgs e)
+    {
+        (BindingContext as AppointmentsViewModel)?.Refresh();
+    }
 }

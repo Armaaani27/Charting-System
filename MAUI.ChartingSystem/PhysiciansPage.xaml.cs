@@ -34,4 +34,14 @@ public partial class PhysiciansPage : ContentPage
     {
         (BindingContext as PhysiciansViewModel)?.Refresh();
     }
+
+    private void ExportClicked(object sender, EventArgs e)
+    {
+        (BindingContext as PhysiciansViewModel)?.Export();
+    }
+
+    private void ImportClicked(object sender, EventArgs e)
+    {
+        (BindingContext as PhysiciansViewModel)?.Import();
+    }
 }

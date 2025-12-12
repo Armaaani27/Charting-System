@@ -81,7 +81,7 @@ public class AppointmentServiceProxy
             return null;
         }
 
-        // this loop ensures that physicians are not double-booked (could maybe be improved to have a dropdown of selectable dates/times?)
+        // this loop ensures that physicians are not double-booked (could maybe be improved to have a dropdown of selectable dates/times? Picker feature?)
         foreach (var a in allAppointments)
         {
             if (a.PhysId == appointment.PhysId && a.Date == appointment.Date && a.Time == appointment.Time)

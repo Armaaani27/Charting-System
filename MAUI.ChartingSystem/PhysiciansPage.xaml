@@ -45,9 +45,11 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Text="Export" />
-                <Button Grid.Column="1" Text="Import"/>
+                <Button Grid.Column="0" Text="Export" Clicked="ExportClicked"/>
+                <Button Grid.Column="1" Text="Import" Clicked="ImportClicked"/>
+                <Entry Grid.Column="2" Text="{Binding ImportPath}"/>
             </Grid>
         </VerticalStackLayout>
     </ScrollView>

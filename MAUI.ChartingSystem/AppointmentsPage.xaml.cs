@@ -34,4 +34,14 @@ public partial class AppointmentsPage : ContentPage
     {
         (BindingContext as AppointmentsViewModel)?.Refresh();
     }
+
+    private void ExportClicked(object sender, EventArgs e)
+    {
+        (BindingContext as AppointmentsViewModel)?.Export();
+    }
+
+    private void ImportClicked(object sender, EventArgs e)
+    {
+        (BindingContext as AppointmentsViewModel)?.Import();
+    }
 }

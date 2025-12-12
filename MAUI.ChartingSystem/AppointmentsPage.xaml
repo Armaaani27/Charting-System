@@ -40,6 +40,17 @@
             <Button Text="Schedule an Appointment" Clicked="AddClicked"/>
             <Button Text="Edit" Clicked="EditClicked"/>
             <Button Text="Delete" Clicked="DeleteClicked"/>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Text="Export" Clicked="ExportClicked"/>
+                <Button Grid.Column="1" Text="Import" Clicked="ImportClicked"/>
+                <Entry Grid.Column="2" Text="{Binding ImportPath}"/>
+            </Grid>
         </VerticalStackLayout>
     </ScrollView>
 

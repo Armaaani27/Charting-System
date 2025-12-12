@@ -14,11 +14,11 @@
 		</data>
 		<key>ChartingSystem.dll</key>
 		<data>
-		105oez3qXVsgUdZvySxGJJh4ndQ=
+		RqSWO0xyxMsTbwEOW5TcDXwVK1c=
 		</data>
 		<key>ChartingSystem.pdb</key>
 		<data>
-		JY3POikN0fLcmcns2Ay+8xCvfeI=
+		ixWuh2xzmDYwLHXW/rsLwnmHAJ4=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Library.ChartingSystem.dll</key>
 		<data>
-		3b/pkMXP+VK/v178acskrpkN5Gg=
+		f0U518FElSErzpVROqoBCmaiXfI=
 		</data>
 		<key>Library.ChartingSystem.pdb</key>
 		<data>
-		8OUPt0Hi4eT5MjKLgWKhOKmtZFI=
+		q4dIu0fcazsh3OkcOfDo9kdVi9M=
 		</data>
 		<key>MauiInfo.plist</key>
 		<data>
@@ -135,6 +135,10 @@
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
 		HlmAtjuZZYt4rOfUtxY3eRZ7cWA=
+		</data>
+		<key>Newtonsoft.Json.dll</key>
+		<data>
+		/PgBwJFctH9ADHSxtFnrVf9KX50=
 		</data>
 		<key>OpenSans-Regular.ttf</key>
 		<data>
@@ -1053,28 +1057,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vdSRkWtK2ktkNXPXqa7qzL2pYZXQkHxWBvK0alO+Qrw=
+			No+lndcuq5uJZpkVnLXWEMMiHerDuDtcmE9PW5uPF38=
 			</data>
 		</dict>
 		<key>ChartingSystem.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AhkEei933CrIlcYPWAiH6ad9SwJAdnWH3GbCcAjxnXk=
+			69ARXukskc+dR+Y3RpoRSE4+y6WnQit0KZox7lSKwvo=
 			</data>
 		</dict>
 		<key>Library.ChartingSystem.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GbergklJLWY86hmpunhd1pPdINkDgOMUqYbV/uer1uo=
+			9rTqZwZYnjglEEDNx8hDTPrTMCWPaZivGbI3e0zki1U=
 			</data>
 		</dict>
 		<key>Library.ChartingSystem.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ude6DMNON+da5jIo5/TqQTz9LOiqcaiZQzqoOs/PEcQ=
+			MWSmehDbLQ5FP6rkFtVflvHxxdcto2t1lM4NDGjVOp0=
 			</data>
 		</dict>
 		<key>MauiInfo.plist</key>
@@ -1257,6 +1261,13 @@
 			<key>hash2</key>
 			<data>
 			n/NMp5DkQGppkjpBoyoV1mhEK36L/cuHFrOabOQafS0=
+			</data>
+		</dict>
+		<key>Newtonsoft.Json.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oowlHf422IHp4kYuFxRBuLDsFW/j9FJgLJFJsbnv4Fs=
 			</data>
 		</dict>
 		<key>OpenSans-Regular.ttf</key>

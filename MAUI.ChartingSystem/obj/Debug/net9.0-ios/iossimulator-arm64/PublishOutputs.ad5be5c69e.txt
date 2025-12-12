@@ -47,6 +47,7 @@
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.Maui.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.Maui.Essentials.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.Maui.Graphics.dll
+/Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Newtonsoft.Json.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Library.ChartingSystem.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/ChartingSystem.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../ChartingSystem.app/Microsoft.CSharp.dll

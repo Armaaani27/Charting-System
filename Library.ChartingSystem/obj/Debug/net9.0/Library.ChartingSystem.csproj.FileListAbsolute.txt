@@ -10,3 +10,4 @@
 /Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.pdb
 /Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/ref/Library.ChartingSystem.dll
 /Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.sourcelink.json
+/Users/arman/ChartingSystem/Library.ChartingSystem/obj/Debug/net9.0/Library.ChartingSystem.csproj.AssemblyReference.cache

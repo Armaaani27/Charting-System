@@ -308,3 +308,4 @@
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/obj/Debug/net9.0-ios/iossimulator-arm64/ref/ChartingSystem.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/Library.ChartingSystem.dll
 /Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/Library.ChartingSystem.pdb
+/Users/arman/ChartingSystem/MAUI.ChartingSystem/bin/Debug/net9.0-ios/iossimulator-arm64/Newtonsoft.Json.dll

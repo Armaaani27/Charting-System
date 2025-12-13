@@ -1,7 +1,5 @@
 /Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/appsettings.Development.json
 /Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/appsettings.json
-/Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/ChartingSystemData/physicians/1.json
-/Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/ChartingSystemData/physicians/2.json
 /Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/API.ChartingSystem.staticwebassets.endpoints.json
 /Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/API.ChartingSystem
 /Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/Microsoft.AspNetCore.OpenApi.dll
@@ -34,3 +32,9 @@
 /Users/arman/ChartingSystem/API.ChartingSystem/obj/Debug/net10.0/API.ChartingSystem.dll
 /Users/arman/ChartingSystem/API.ChartingSystem/obj/Debug/net10.0/refint/API.ChartingSystem.dll
 /Users/arman/ChartingSystem/API.ChartingSystem/obj/Debug/net10.0/API.ChartingSystem.pdb
+/Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/API.ChartingSystem.deps.json
+/Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/API.ChartingSystem.runtimeconfig.json
+/Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/API.ChartingSystem.dll
+/Users/arman/ChartingSystem/API.ChartingSystem/bin/Debug/net10.0/API.ChartingSystem.pdb
+/Users/arman/ChartingSystem/API.ChartingSystem/obj/Debug/net10.0/API.ChartingSystem.genruntimeconfig.cache
+/Users/arman/ChartingSystem/API.ChartingSystem/obj/Debug/net10.0/ref/API.ChartingSystem.dll

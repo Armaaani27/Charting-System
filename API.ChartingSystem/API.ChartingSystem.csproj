@@ -15,4 +15,10 @@
     <ProjectReference Include="..\Library.ChartingSystem\Library.ChartingSystem.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="ChartingSystemData\**" />
+    <None Remove="ChartingSystemData\**" />
+    <Compile Remove="ChartingSystemData\**" />
+  </ItemGroup>
+
 </Project>

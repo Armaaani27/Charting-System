@@ -17,9 +17,13 @@ namespace MAUI.ChartingSystem.ViewModels
 {
     public class PhysiciansViewModel : INotifyPropertyChanged
     {
+        private ObservableCollection<Physician?> _physicians;
+
         public PhysiciansViewModel()
         {
             ImportPath = Path.Combine(FileSystem.AppDataDirectory, "physiciansData.json");
+            _physicians = PhysicianServiceProxy.Current.Physicians;
+            Refresh();
         }
         
         private bool MatchesQuery(Physician? physician)
@@ -28,14 +32,17 @@ namespace MAUI.ChartingSystem.ViewModels
             {
                 return false;
             }
-            return (physician?.Name?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false) || (physician?.LicenseNum?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false) || (physician?.GradDate?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false) || (physician?.Specializations?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false);
+            return (physician?.Name?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false)
+                || (physician?.LicenseNum?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false)
+                || (physician?.GradDate?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false)
+                || (physician?.Specializations?.ToUpper()?.Contains(Query?.ToUpper() ?? string.Empty) ?? false);
         }
         
         public ObservableCollection<Physician?> Physicians
         {
             get
             {
-                return new ObservableCollection<Physician?>(PhysicianServiceProxy.Current.Physicians.Where(MatchesQuery));
+                return _physicians;
             }
         }
         
@@ -47,21 +54,33 @@ namespace MAUI.ChartingSystem.ViewModels
         public void Export()
         {
             var physicianString = JsonConvert.SerializeObject(Physicians);
-            File.WriteAllText(Path.Combine(FileSystem.AppDataDirectory, "physiciansData.json"), physicianString);
+            
+            using (StreamWriter sw = new StreamWriter(Path.Combine(FileSystem.AppDataDirectory, "physiciansData.json")))
+            {
+                sw.WriteLine(physicianString);
+            }
         }
 
         public void Import()
         {
-            var physicianString = File.ReadAllText(ImportPath);
-            var physicians = JsonConvert.DeserializeObject<List<Physician>>(physicianString);
-            
-            foreach(var physician in physicians)
+            using(StreamReader sr = new StreamReader(ImportPath))
             {
-                physician.Id = 0;
-                PhysicianServiceProxy.Current.AddOrUpdate(physician);
+                var physicianString = sr.ReadLine();
+                if (string.IsNullOrEmpty(physicianString))
+                {
+                    return;
+                }
+                var physicians = JsonConvert.DeserializeObject<List<Physician>>(physicianString);
+            
+                foreach(var physician in physicians)
+                {
+                    physician.Id = 0;
+                    PhysicianServiceProxy.Current.AddOrUpdate(physician);
+                }
+                NotifyPropertyChanged("Physicians");
             }
-            NotifyPropertyChanged("Physician");
         }
+
         public string ImportPath { get; set; }
         public Physician? SelectedPhysician { get; set; }
         public string? Query { get; set; }
@@ -75,7 +94,7 @@ namespace MAUI.ChartingSystem.ViewModels
                 return;
             }
             PhysicianServiceProxy.Current.Delete(SelectedPhysician);
-            NotifyPropertyChanged("Physicians");
+            Refresh();
         }
 
         private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")

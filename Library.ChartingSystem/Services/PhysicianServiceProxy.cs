@@ -5,8 +5,6 @@ using System.ComponentModel;
 using Library.ChartingSystem.Models;
 using System.Collections.ObjectModel;
 
-//using System.Reflection.Metadata;
-
 namespace Library.ChartingSystem.Services;
 
 public class PhysicianServiceProxy
@@ -30,7 +28,7 @@ public class PhysicianServiceProxy
 
     private PhysicianServiceProxy()
     {
-        RefreshFromApi().Wait();
+        RefreshFromApi();
     }
 
     public async Task RefreshFromApi()

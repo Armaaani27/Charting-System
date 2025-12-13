@@ -27,9 +27,6 @@ public partial class PhysicianView : ContentPage
         {
             return;
         }
-		
-		PhysicianServiceProxy.Current.AddOrUpdate(BindingContext as Physician);
-
 		Shell.Current.GoToAsync("//PhysiciansPage");
     }
 

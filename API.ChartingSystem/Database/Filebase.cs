@@ -63,7 +63,8 @@ namespace API.ChartingSystem.Database
             }
 
             //go to the right place
-            string path = $"{_physicianRoot}\\{physician.Id}.json";
+            string filename = $"{physician.Id}.json";
+            string path = Path.Combine(_physicianRoot, filename);
             
 
             //if the item has been previously persisted
@@ -88,12 +89,21 @@ namespace API.ChartingSystem.Database
                 var _physicians = new List<Physician>();
                 foreach(var physicianFile in root.GetFiles())
                 {
-                    var physician = JsonConvert
-                        .DeserializeObject<Physician>
-                        (File.ReadAllText(physicianFile.FullName));
-                    if(physician != null)
+                    try
                     {
-                        _physicians.Add(physician);
+                        string content = File.ReadAllText(physicianFile.FullName);
+                        if (string.IsNullOrWhiteSpace(content))
+                            continue;
+
+                        var physician = JsonConvert.DeserializeObject<Physician>(content);
+                        if (physician != null)
+                        {
+                            _physicians.Add(physician);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        
                     }
 
                 }

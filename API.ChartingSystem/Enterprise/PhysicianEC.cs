@@ -29,6 +29,7 @@ namespace API.ChartingSystem.Enterprise
             {
                 return null;
             }
+            /*
             if (physician.Id <= 0)
             {
                 var maxId = -1;
@@ -53,7 +54,6 @@ namespace API.ChartingSystem.Enterprise
                     Filebase.Current.Physicians.Insert(index, physician);
                 }
             }
-            /*
             var phys = new Physician(physician);
             physician = new Physician(Filebase.Current.AddOrUpdate(phys));
             return physician;

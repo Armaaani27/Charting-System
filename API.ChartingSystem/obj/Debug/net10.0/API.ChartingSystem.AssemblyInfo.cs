@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API.ChartingSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebd55f26bf0efa9b4c89d050f44390be99a37b4f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04f9700084e059bd6d6aa5cf6fb083b5c60c53ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("API.ChartingSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API.ChartingSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

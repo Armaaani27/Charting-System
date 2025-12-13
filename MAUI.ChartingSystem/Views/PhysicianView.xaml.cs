@@ -18,8 +18,16 @@ public partial class PhysicianView : ContentPage
         Shell.Current.GoToAsync("//PhysiciansPage");
     }
 
-	private void OkClicked(object sender, EventArgs e)
+	private async void OkClicked(object sender, EventArgs e)
     {
+		try
+        {
+            await PhysicianServiceProxy.Current.AddOrUpdate(BindingContext as Physician);
+        } catch(Exception ex)
+        {
+            return;
+        }
+		
 		PhysicianServiceProxy.Current.AddOrUpdate(BindingContext as Physician);
 
 		Shell.Current.GoToAsync("//PhysiciansPage");

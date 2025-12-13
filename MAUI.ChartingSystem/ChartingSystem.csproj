@@ -68,5 +68,5 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Library.ChartingSystem\Library.ChartingSystem.csproj" />
 	</ItemGroup>
-
+	
 </Project>

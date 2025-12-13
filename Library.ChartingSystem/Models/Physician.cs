@@ -23,7 +23,10 @@ namespace Library.ChartingSystem.Models
             return $"{Id}. {Name}: {LicenseNum}, {GradDate}, {Specializations}";
         }
 
-        public Physician() {}
+        public Physician()
+        {
+
+        }
         public Physician(int id)
         {
             var physicianCopy = PhysicianServiceProxy.Current.Physicians.FirstOrDefault(p => (p?.Id ?? 0) == id);

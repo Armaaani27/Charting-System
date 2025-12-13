@@ -47,31 +47,20 @@ namespace MAUI.ChartingSystem.ViewModels
         public void Export()
         {
             var physicianString = JsonConvert.SerializeObject(Physicians);
-            
-            using (StreamWriter sw = new StreamWriter(Path.Combine(FileSystem.AppDataDirectory, "physiciansData.json")))
-            {
-                sw.WriteLine(physicianString);
-            }
+            File.WriteAllText(Path.Combine(FileSystem.AppDataDirectory, "physiciansData.json"), physicianString);
         }
 
         public void Import()
         {
-            using(StreamReader sr = new StreamReader(ImportPath))
-            {
-                var physicianString = sr.ReadLine();
-                if (string.IsNullOrEmpty(physicianString))
-                {
-                    return;
-                }
-                var physicians = JsonConvert.DeserializeObject<List<Physician>>(physicianString);
+            var physicianString = File.ReadAllText(ImportPath);
+            var physicians = JsonConvert.DeserializeObject<List<Physician>>(physicianString);
             
-                foreach(var physician in physicians)
-                {
-                    physician.Id = 0;
-                    PhysicianServiceProxy.Current.AddOrUpdate(physician);
-                }
-                NotifyPropertyChanged("Physicians");
+            foreach(var physician in physicians)
+            {
+                physician.Id = 0;
+                PhysicianServiceProxy.Current.AddOrUpdate(physician);
             }
+            NotifyPropertyChanged("Physician");
         }
         public string ImportPath { get; set; }
         public Physician? SelectedPhysician { get; set; }

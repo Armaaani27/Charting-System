@@ -13,8 +13,3 @@ C#, .NET MAUI Framework
 - Data validation to ensure accurate record entry  
 - Data persistence via RESTful API  
 - Simple, intuitive user interface
-
-**How to Run CLI (MAUI app coming soon):**  
-1. Ensure you have the [.NET SDK](https://dotnet.microsoft.com/en-us/download) installed (version 6.0 or higher).  
-2. Open a terminal, navigate to the CLI.ChartingSystem folder in the project directory, and type
-   `dotnet run`

@@ -31,5 +31,5 @@ C#, .NET MAUI Framework
   - `cd API.ChartingSystem`
   - `dotnet run`
 - Open ChartingSystem.sln in Visual Studio
-- Select a target platform (Android Emulator, iOS Simulator, or Windows)
+- Select a target platform (Android Emulator, iOS Simulator, or Windows; iOS recommended)
 - Click Run

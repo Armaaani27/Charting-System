@@ -13,3 +13,24 @@ C#, .NET MAUI Framework
 - Data validation to ensure accurate record entry  
 - Data persistence via RESTful API  
 - Simple, intuitive user interface
+
+**How to Run:**
+How to Run
+- Ensure the following are installed on your system:
+  - .NET SDK (8.0 or later)
+  - Visual Studio 2022 (17.8 or later recommended)
+  - .NET MAUI workload
+  - Android Studio (for Android emulator)
+  - Xcode (macOS only, for iOS simulator)
+  - Install the MAUI workload if not already installed:
+- dotnet workload install maui
+- Clone the Repository
+  - git clone https://github.com/Armaaani27/ChartingSystem.git
+  - cd ChartingSystem
+- dotnet restore
+- Run the API backend
+- cd API.ChartingSystem
+  - dotnet run
+- Open ChartingSystem.sln in Visual Studio
+- Select a target platform (Android Emulator, iOS Simulator, or Windows)
+- Click Run

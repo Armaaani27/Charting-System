@@ -22,14 +22,14 @@ C#, .NET MAUI Framework
   - Android Studio (for Android emulator)
   - Xcode (macOS only, for iOS simulator)
   - Install the MAUI workload if not already installed:
-- dotnet workload install maui
+- `dotnet workload install maui`
 - Clone the Repository
-  - git clone https://github.com/Armaaani27/ChartingSystem.git
-  - cd ChartingSystem
-- dotnet restore
+  - `git clone https://github.com/Armaaani27/ChartingSystem.git`
+  - `cd ChartingSystem`
+- `dotnet restore`
 - Run the API backend
-  - cd API.ChartingSystem
-  - dotnet run
+  - `cd API.ChartingSystem`
+  - `dotnet run`
 - Open ChartingSystem.sln in Visual Studio
 - Select a target platform (Android Emulator, iOS Simulator, or Windows)
 - Click Run

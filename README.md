@@ -29,7 +29,7 @@ How to Run
   - cd ChartingSystem
 - dotnet restore
 - Run the API backend
-- cd API.ChartingSystem
+  - cd API.ChartingSystem
   - dotnet run
 - Open ChartingSystem.sln in Visual Studio
 - Select a target platform (Android Emulator, iOS Simulator, or Windows)

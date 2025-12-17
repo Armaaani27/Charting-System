@@ -15,7 +15,6 @@ C#, .NET MAUI Framework
 - Simple, intuitive user interface
 
 **How to Run:**
-How to Run
 - Ensure the following are installed on your system:
   - .NET SDK (8.0 or later)
   - Visual Studio 2022 (17.8 or later recommended)

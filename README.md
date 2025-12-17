@@ -1,5 +1,3 @@
-DEMO VIDEO HERE: https://youtu.be/G12HYDZEkNk
-
 # Medical Charting System
 
 **Description:**
